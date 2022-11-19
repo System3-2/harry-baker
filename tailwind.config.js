@@ -8,6 +8,7 @@ module.exports = {
         primary: "#2E83FF",
         "text-primary": "#FF6717",
         "text-accent": "#FFB839",
+        footerbg: "#001c38",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
