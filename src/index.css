@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .grid-template {
+    grid-template-columns: 1fr;
+  }
+
+  .font {
+    color: #c9d6e4;
+    margin-right: 10px;
+  }
+
+  .hover:hover .font {
+    color: #4169e1;
+  }
+
+  .social {
+    background-color: rgba(255, 255, 255, 0.21);
+    transition: all .2s ease;
+  }
+
+  .social-icon {
+    color: #fff;
+    transition: all .2s ease;
+  }
+
+  .social:hover {
+    background-color: #fff;
+  }
+
+  .social:hover .social-icon{
+    color: #001c38;
+  }
+
+  @media (min-width: 768px) {
+    .grid-template {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .grid-template {
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+  }
+}
